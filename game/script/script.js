@@ -13,14 +13,7 @@ function stopSliding(slider){
     }else{
     var sliderBelow = document.getElementById("slider".concat(slider-1));
     }
-    var left = window.getComputedStyle(sliderCurrent).getPropertyValue("left") 
-    sliderCurrent.classList.remove("animate");
-    sliderCurrent.style.left = left;
-    var width = parseInt (window.getComputedStyle(sliderCurrent).getPropertyValue("width")); 
-    var leftBelow = parseInt (window.getComputedStyle(sliderBelow).getPropertyValue("left")); 
-    let =parseInt(left);
-    var difference = left - leftBelow;
-    var absDifference = Math.abs(difference);
+    
     if(difference>width || difference<-width){
         var score = "Score: ".concat(slider-1);
         alert(score);
