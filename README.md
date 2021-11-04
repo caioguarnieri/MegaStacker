@@ -10,4 +10,4 @@ Click STOP to stop the slider where you want.
 Presentation:
 https://docs.google.com/presentation/d/16YUcWecmtotEYBbgN2EgG36MBr7A-drSk9VpivpIygQ/edit?usp=sharing
 
-Game:
+Game: https://caioguarnieri.github.io/MegaStacker/
