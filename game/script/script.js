@@ -16,12 +16,17 @@ function stopSliding(slider){
     }
     let sliderBelow = document.getElementById("slider".concat(slider-1));
     let left = window.getComputedStyle(sliderCurrent).getPropertyValue("left");
+    let right = window.getComputedStyle(sliderCurrent).getPropertyValue("right");
     sliderCurrent.classList.remove("animate");
     sliderCurrent.style.left = left;
+    console.log(sliderCurrent.style.left = left)
     let width = parseInt(window.getComputedStyle(sliderCurrent).getPropertyValue("width"));
     let leftBelow = parseInt(window.getComputedStyle(sliderBelow).getPropertyValue("left"));
     left = parseInt(left);
+    right = parseInt(right);
+    console.log("left", left)
     let difference = left - leftBelow; 
+    console.log("difference", difference)
     let absDifference = Math.abs(difference); 
     if(difference>width || difference<-width){
         let score = "Score: ".concat(slider-1);
@@ -29,9 +34,9 @@ function stopSliding(slider){
         location.reload();
     }
     if(difference<0){
-       left = left + absDifference;
+       absDifference;
     }else{
-        left = left - difference;
+        difference;
         sliderCurrent.style.left = left.toString().concat("px");
     }
     let offset = (width - absDifference).toString().concat("px");
