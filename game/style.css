@@ -6,14 +6,14 @@
     padding: 0;
 }
 #game{
-    width: 500px;
-    height: 500px;
+    width:  500px;
+    height: 440px;
     margin: auto;
-    border: 2px solid rgb(240, 23, 23);
+    border: 2px solid rgb(13, 13, 14);
    
 }
 #btn{
-    font-size: 2rem;
+    font-size: 5rem;
     padding: 0.5rem 2rem;
     border: 3px solid black;
     border-radius: 0.3rem;
@@ -25,18 +25,19 @@
     background-color: rgb(248, 248, 250);
 }
 .slider{
-    visibility: hidden;
+   
     height: 20px;
     width: 100px;
-    background-color: rgb(255, 0, 200);
+    background-color: rgb(255, 0, 0);
     position: relative;
+    
     
 }
 #slider4{
-    visibility: visible ;
+    visibility: visible
 }
 .animate{
-    animation: slide 3s infinite linear;
+    animation: slide 2s infinite linear;
 }
 @keyframes slide {
     0%{left: 0px;}
